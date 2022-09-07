@@ -1,0 +1,50 @@
+
+/* Inline #11 | http://localhost:3000/ */
+
+.footer-area {
+    padding: 50px 0;
+  }
+  
+  .footer {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    column-gap: 25px;
+  }
+  
+  .footer-content h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 0;
+  }
+  
+  .footer-content p {
+    text-align: justify;
+    padding-bottom: 16px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .footer-content p span {
+    margin-left: 14px;
+  }
+  
+
+.footer-information h3 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+  }
+  
+  .footer-information ul li {
+    padding: 5px 0;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+
+  .footer-information {
+    text-align: left;
+  }
+

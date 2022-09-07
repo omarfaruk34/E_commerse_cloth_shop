@@ -1,0 +1,109 @@
+.elemantor-area{
+    margin: 30px 0;
+}
+.women-image{
+    background-image: url('https://k4j3j2s7.rocketcdn.me/clotya/wp-content/uploads/2022/05/banner-11.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+}
+.men-product{
+    background-image: url('https://k4j3j2s7.rocketcdn.me/clotya/wp-content/uploads/2022/05/banner-12.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 300px;
+}
+.shoes{
+    background-image: url('https://k4j3j2s7.rocketcdn.me/clotya/wp-content/uploads/2022/05/banner-13.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 265px;
+    height: 280px;
+}
+.accesories{
+    background-image: url('https://k4j3j2s7.rocketcdn.me/clotya/wp-content/uploads/2022/05/banner-14.jpg');
+    /* background-image: url('https://k4j3j2s7.rocketcdn.me/clotya/wp-content/uploads/2022/05/banner-13.jpg'); */
+    background-position: center;
+    background-size: cover;
+    width: 265px;
+    height: 280px;
+}
+
+.elemantor {
+    display: flex;
+    column-gap: 20px;
+  }
+  
+  .elemantor-men {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  
+  .accesories-product {
+    display: flex;
+    column-gap: 20px;
+  }
+  
+
+.women-product-content {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 20px;
+  }
+  
+  .women-product-content h3 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  .women-product-content p {
+    text-align: justify;
+    padding: 15px 0;
+    font-weight: 300;
+    font-style: italic;
+    width: 300px;
+  }
+  .menu{
+    margin: 30px 0;
+  }
+  .menu ul li {
+    padding: 5px 0;
+    text-align: left;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 400;
+    transition: .3s;
+  }
+  .menu ul li:hover{
+    font-size: 13px;
+  }
+  .men-proudct-content{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  .men-proudct-content h3{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .shoes-content h3 {
+	font-size: 30px;
+	font-weight: 500;
+	padding: 50px 10px;
+    text-align: left;
+}
+  .accesories-content h3 {
+	font-size: 30px;
+	font-weight: 500;
+	padding: 50px 10px;
+    text-align: left;
+}

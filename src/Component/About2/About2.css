@@ -1,0 +1,56 @@
+
+
+.about2{
+    background-image: url('https://k4j3j2s7.rocketcdn.me/clotya/wp-content/uploads/2022/05/banner-box2.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.about2-content{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about2-content {
+    text-align: left;
+    padding:20px 60px;
+    }
+    .about2-content h5 {
+    font-size: 13px;
+    font-weight: 600;
+    }
+    .about2-content h3 {
+    font-size: 37px;
+    font-weight: 700;
+    padding: 20px 0;
+    line-height: 40px;
+    }
+    .about2-content p {
+    text-align: justify;
+    font-style: italic;
+    font-weight: 300;
+    color: #34495e;
+    width: 500px;
+    }
+    .about2-content button {
+    padding: 10px 20px;
+    border: 1px solid #333;
+    display: inline-block;
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0 20px 0;
+    background-color: #fff;
+    transition: .3s;
+    cursor: pointer;
+    }
+    .about2-content button:hover{
+        background-color: #333;
+        color: #fff;
+        
+    }
