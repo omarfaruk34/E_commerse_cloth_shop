@@ -1,0 +1,50 @@
+
+/* Inline #18 | http://localhost:3000/menproduct/6319fa459b0305cd66a60d1e */
+
+.product-details-top {
+    display: grid;
+    column-gap: 80px;
+    grid-template-columns: 40% 55%;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  
+  .product-details-content {
+    text-align: left;
+  }
+  
+  .product-details-area {
+    margin: 50px 0;
+  }
+  
+  .product-details-content h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .product-details-content {
+    padding-top: 20px;
+  }
+  
+ 
+  .product-details-content p {
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  
+  .product-details-content h5 {
+    font-size: 13px;
+    padding-top: 15px;
+    text-align: justify;
+  }
+  
+  .product-details-bottom p {
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  

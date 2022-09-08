@@ -9,6 +9,8 @@
   .product-content p {
     width: 60%;
     text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
   }
   
   
@@ -16,17 +18,13 @@
     font-size: 24px;
     font-weight: 500;
   }
-  
-  .product-content p {
-    font-size: 14px;
-    font-weight: 400;
-  }
+
   
   .products {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     column-gap: 15px;
-    margin-top: 16px;
+    margin-top: 40px;
     position: relative;
   }
   .products::before{
@@ -41,14 +39,14 @@
 
   .single-product img {
     border-radius: 10px 0 10px 0;
-  
+    height: 350px;
   }
 
 
 .single-product h3 {
     text-align: left;
-    font-size: 17px;
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     padding: 10px 0;
   }
   
@@ -59,7 +57,7 @@
   }
   
   .single-product button {
-    padding: 8px 15px;
+    padding: 8px 20px;
     border: none;
     color: #fff;
     background-color: #333;
@@ -67,5 +65,69 @@
     margin: 10px 0;
     font-weight: 600;
     cursor: pointer;
+    transition: .3s;
+    font-size: 16px;
+  }
+  .single-product button a {
+    color: #fff;
+  }
+  .single-product button:hover{
+    background-color: rgb(209, 60, 60);
+    border-radius: 5px;
   }
   
+
+
+/* Inline #18 | http://localhost:3000/product */
+
+.product-search {
+  background-color: #ecf0f1;
+  color: #333;
+}
+
+.product-full-container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  column-gap: 40px;
+}
+
+.product-search h5 {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.product-search {
+  margin: 146px 0;
+  padding: 70px 0;
+  height: 400px;
+  box-shadow: 2px 1px 5px #333;
+}
+
+.product-input .text {
+  width: 150px;
+  padding: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+  margin: 5px 0;
+}
+
+
+
+.product-button .button {
+  padding: 10px 15px;
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #333;
+  border: navajowhite;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-button {
+  text-align: right;
+  margin-right: 18px;
+  margin-top: 5px;
+}

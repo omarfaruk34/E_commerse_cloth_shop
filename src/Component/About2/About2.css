@@ -49,8 +49,21 @@
     transition: .3s;
     cursor: pointer;
     }
+    .about2-content button a{
+        transition: .3s;
+        font-size: 11px;
+        text-transform: capitalize;
+        color: #333;
+        font-weight: 600;
+        
+    }
+    .about2-content button a:hover{
+        color: #fff;
+    }
     .about2-content button:hover{
         background-color: #333;
         color: #fff;
         
     }
+
+

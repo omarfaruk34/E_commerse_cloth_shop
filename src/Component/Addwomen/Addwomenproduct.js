@@ -1,13 +1,13 @@
-import React from 'react';
-import "./Addproduct.css";
+import React from 'react'
+import './Addwomenproduct.css'
 
 import { useForm } from 'react-hook-form';
 
-export default function Addproduct() {
+export default function Addwomenproduct() {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         console.log(data)
-        fetch('http://localhost:5000/addProduct', {
+        fetch('http://localhost:5000/addwomenProduct', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -15,24 +15,18 @@ export default function Addproduct() {
             .then(res => res.json())
             .then(result => {
                 if (result.insertedId) {
-                    alert("Product added");
+                    alert("Women Product added");
                     reset();
                 }
             })
     };
-    return (
-        <div className='row'>
+  return (
+    <div className='row'>
             <div id="addProduct" className='addcar col-xl-12'>
-                <h2 className="my-3 p-2 text-light">Please Add Product</h2>
+                <h2 className="my-3 p-2 text-light">Please Add Women Product</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="row">
-                    <div className="col-xl-6 mr-2 p-3">
-                    <input
-                        {...register("brand")}
-                        placeholder="Brand Name"
-                        className="form-control"
-                    />
-                    </div>
+                   
                     <div className="col-xl-12 mr-2 p-3">
                     <textarea
                         {...register("categori")}
@@ -97,5 +91,5 @@ export default function Addproduct() {
                 </form>
             </div>
         </div>
-    )
+  )
 }

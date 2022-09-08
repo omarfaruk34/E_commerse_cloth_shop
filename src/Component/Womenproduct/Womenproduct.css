@@ -1,0 +1,27 @@
+.product-content-image{
+    margin-top: 10px;
+    background-image: url('https://klbtheme.com/clotya/wp-content/uploads/2022/05/banner-26.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.product-content2 {
+	padding: 70px 32px;
+  text-align: left;
+}
+
+.product-content2 p {
+	text-align: justify;
+	font-size: 14px;
+	font-weight: 400;
+	padding-top: 15px;
+	width: 450px;
+}
+  
+  
+  
+  .product-content2 h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+  }

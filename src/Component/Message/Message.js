@@ -7,7 +7,6 @@ import React, { useEffect, useState } from 'react';
 
 export default function Message() {
   const [message, setMessage] = useState([]);
-  // const [items, setItems] = useState([]);
   useEffect(() => {
     fetch('http://localhost:5000/contact')
       .then(res => res.json())
@@ -25,8 +24,7 @@ export default function Message() {
           message.map(item =>
             <div className="messages bg-light p-2" key={item?._id}>
               <div className="message-top">
-                {/* <img src="https://i.ibb.co/sgFyKzh/Cartoon-Pic-Ideas-for-DP-Profile-04.png" alt="" /> */}
-                <img src="https://i.ibb.co/wzwNwg9/images.jpg" alt="" />
+                {/* <img src="https://i.ibb.co/wzwNwg9/images.jpg" alt="" /> */}
                 <div className="message-content">
                   <h1>{item?.name}</h1>
                   <h2><span>Email: </span> {item?.email}</h2>

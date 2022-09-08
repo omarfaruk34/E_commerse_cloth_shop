@@ -5,15 +5,15 @@ import Banner from '../Banner/Banner'
 import Blog from '../Blog/Blog'
 import Contact from '../Contact/Contact'
 import Elemantor_Container from '../Elementor_Container/Elemantor_Container'
-// import Footer from '../Footer/Footer'
-// import Header from '../Header/Header'
-import Product from '../Product/Product'
+import HomeProduct from '../HomeProduct/HomeProduct'
+
+
 
 export default function Home() {
   return (
     <div>
       <Banner/>
-      <Product/>
+      <HomeProduct/>
       <About/>
       <About2/>
       <Blog/>
