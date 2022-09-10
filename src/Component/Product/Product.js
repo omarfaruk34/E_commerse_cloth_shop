@@ -114,7 +114,7 @@ console.log(filterData)
                   <h3>{item?.title}</h3>
                   <p>{item?.price}</p>
                   <div className="product-cart">
-                    <button><Link to={`${item?._id}`}>Cart</Link></button>
+                    <button className='demo'><Link to={`${item?._id}`}>Cart</Link></button>
                   </div>
                 </div>
               )

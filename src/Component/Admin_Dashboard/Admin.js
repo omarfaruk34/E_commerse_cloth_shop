@@ -22,53 +22,67 @@ import Addmenproduct from '../Addmenproduct/Addmenproduct';
 import Addwomenproduct from '../Addwomen/Addwomenproduct';
 
 
+import useAuth from "../../Hooks/useAuth";
+import Orders from '../Orders/Orders';
+
+
+
 export default function Admin() {
+    const { admin } = useAuth();
     const [activeTab, setActiveTab] = useState("addProduct");
-    console.log(activeTab)
+    // console.log(activeTab)
     return (
         <div className='admin-dashboard'>
             <div className='sidebar'>
                 <div className='side-nav' >
-                 
-                    <ul className='text-light list-unstyled'>
-                        {/* <li className='' onClick={() => setActiveTab("dashboard")}><span><MdOutlineDashboard /></span>Dashboard</li>
-                        <li className='' onClick={() => setActiveTab("payment")}><span><MdPayment /></span>Payment</li> */}
-                        {/* <li onClick={() => setActiveTab("review")}><span><MdReviews /></span>Review</li>
-                        <li onClick={() => setActiveTab("orders")}><span><FaFirstOrderAlt /></span>Orders</li> */}
-                        <li onClick={() => setActiveTab("addProduct")}><span><AiFillFileAdd /></span>Add Product</li>
-                        <li onClick={() => setActiveTab("addmenProduct")}><span><AiOutlineFolderView /></span>Add Men Product</li>
-                        <li onClick={() => setActiveTab("addwomenProduct")}><span><AiOutlineFolderView /></span>Add Women Product</li>
-                        <li onClick={() => setActiveTab("message")}><span><AiFillMessage /></span>View all message</li>
+
+                    <ul className="text-light list-unstyled">
+
+                        {admin && (
+                            <li onClick={() => setActiveTab("addProduct")}><span><AiFillFileAdd /></span>Add Product</li>
+                        )}
+                        {admin && (
+                            <li onClick={() => setActiveTab("addmenProduct")}><span><AiOutlineFolderView /></span>Add Men Product</li>
+                        )}
+                        {admin && (
+                            <li onClick={() => setActiveTab("addwomenProduct")}><span><AiOutlineFolderView /></span>Add Women Product</li>
+                        )}
+                        {admin && (
+                            <li onClick={() => setActiveTab("message")}><span><AiFillMessage /></span>View all message</li>
+                        )}
+                        {admin && (
+                            <li onClick={() => setActiveTab("manageOrders")}><span><AiFillMessage /></span>Manage Orders</li>
+                        )}
+
+                        <li onClick={() => setActiveTab("order")}>
+                            <span>
+                            <AiFillMessage />
+                            </span>
+                            Order
+                        </li>
                     </ul>
                 </div>
                 <div className='side-content'>
-                    {/* {
-                        activeTab === "dashboard" && <Dashboard />
+
+                    {
+                        activeTab === "addProduct" && <Addproduct />
                     }
                     {
-                        activeTab === "payment" && <Payment />
+                        activeTab === "addmenProduct" && <Addmenproduct />
                     }
                     {
-                        activeTab === "review" && <ReviewPost />
-                    }
-                    {
-                        activeTab === "orders" && <Orders />
-                    } */}
-                    {
-                        activeTab === "addProduct" && <Addproduct/>
-                    }
-                      {
-                        activeTab === "addmenProduct" && <Addmenproduct/>
-                    }
-                      {
-                        activeTab === "addwomenProduct" && <Addwomenproduct/>
+                        activeTab === "addwomenProduct" && <Addwomenproduct />
                     }
                     {
                         activeTab === "message" && <Message />
                     }
-                    {/* {
-                        activeTab === "manageorders" && <Manageorders />
-                    } */}
+                     {
+                        activeTab === "manageOrders" && <Orders/>
+                    }
+                     {
+                        activeTab === "order" && <Orders/>
+                    }
+
 
                 </div>
             </div>

@@ -22,70 +22,76 @@ export default function Addmenproduct() {
     };
     return (
         <div className='row'>
-            <div id="addProduct" className='addcar col-xl-12'>
-                <h2 className="my-3 p-2 text-light">Please Add Men Product</h2>
+            <div id="addProduct" className='addproduct '>
+                <h2 className="">Please Add Men Product</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className="row">
-                    
-                    <div className="col-xl-12 mr-2 p-3">
-                    <textarea
-                        {...register("categori")}
-                        placeholder="Categori"
-                        className="form-control"
-                    />
-                    </div>
-                    <div className="col-xl-6 mr-2 p-3">
-                    <input
-                        {...register("title")}
-                        placeholder="Product Title"
-                        className="form-control"
-                    />
-                    </div>
-                   
-                    <div className="col-xl-6 mr-2 p-3">
-                    <input
-                        {...register("price")}
-                        placeholder="Price"
-                        className="form-control"
-                    />
-                    </div>
-                    <div className="col-xl-6 mr-2 p-3">
-                    <input
-                        {...register("rating")}
-                        placeholder="Overall Rating"
-                        className="form-control"
-                    />
-                    </div>
-                    <div className="col-xl-12 mr-2 p-3">
-                    <textarea
-                        {...register("short_description")}
-                        placeholder="Short Description"
-                        className="form-control"
-                    />
-                    </div>
-                    <div className="col-xl-12 mr-2 p-3">
-                    <textarea
-                        {...register("description")}
-                        placeholder="Description"
-                        className="form-control"
-                    />
-                    </div>
-                    <div className="col-xl-12  mr-2 p-3">
-                    <input
-                        {...register("image", { required: true })}
-                        placeholder="Image Link"
-                        className="form-control"
-                    />
-                    </div>
-                    {errors.exampleRequired && <span>This field is required</span>}
-                   
+                <input
+                            {...register("brand")}
+                            placeholder="Brand Name"
+                            className="text"
+                        />
+                    {/* </div> */}
+                    {/* <div className="col-xl-12 mr-2 p-3"> */}
+                        <input
+                            {...register("categori")}
+                            placeholder="Categori"
+                            className="text"
+                        />
+                    {/* </div> */}
+                    {/* <div className="col-xl-6 mr-2 p-3"> */}
+                        <input
+                            {...register("title")}
+                            placeholder="Product Title"
+                            className="text"
+                        />
+                    {/* </div> */}
 
-                   
-                    
-                    <div className="col-xl-12 m-2">
-                    <input type="submit" className='btn btn-danger' value="Add"  />
-                         </div>
-                    </div>
+                    {/* <div className="col-xl-6 mr-2 p-3"> */}
+                        <input
+                            {...register("price")}
+                            placeholder="Price"
+                            className="text"
+                        />
+                    {/* </div> */}
+                    {/* <div className="col-xl-6 mr-2 p-3"> */}
+                      
+                    {/* </div> */}
+                    {/* <div className="col-xl-12 mr-2 p-3"> */}
+                        <textarea
+                            {...register("short_description")}
+                            placeholder="Short Description"
+                            className="desc"
+                        />
+                    {/* </div> */}
+                    {/* <div className="col-xl-12 mr-2 p-3"> */}
+                        <textarea
+                            {...register("description")}
+                            placeholder="Description"
+                            className="desc"
+                        />
+                    {/* </div> */}
+                    <input
+                            {...register("rating")}
+                            placeholder="Overall Rating"
+                            className="text"
+                        />
+                    {/* <div className="col-xl-12  mr-2 p-3"> */}
+                        <input
+                            {...register("image", { required: true })}
+                            placeholder="Image Link"
+                            className="text"
+                        />
+                    {/* </div> */}
+                    {errors.exampleRequired && <span>This field is required</span>}
+
+
+
+
+                    {/* <div className="col-xl-12 m-2"> */}
+                        <input type="submit" className='button' value="Add" />
+                    {/* </div> */}
+
+                    {/* </div> */}
 
                     
                 </form>

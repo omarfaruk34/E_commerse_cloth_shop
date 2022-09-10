@@ -113,7 +113,9 @@
   margin: 5px 0;
 }
 
-
+.product-input .check {
+	margin: 10px 14px 10px 0;
+}
 
 .product-button .button {
   padding: 10px 15px;

@@ -18,7 +18,7 @@ export default function Footer() {
                         <h3>Information</h3>
                         <div className="information-menu">
                             <ul>
-                                <li><Link to={"/about"}>About Us</Link></li>
+                                <li className='demo'><Link to={"/about"}>About Us</Link></li>
                                 <li>Privacy Policy</li>
                                 <li>Return Policy</li>
 
@@ -29,8 +29,8 @@ export default function Footer() {
                         <h3>Account</h3>
                         <div className="information-menu">
                             <ul>
-                                <li>Dashboard</li>
-                                <li>My orders</li>
+                                <li className='demo'><Link to={"/admin"}>Dashboard</Link></li>
+                                <li className='demo'><Link to={"/orders"}>My Orders</Link></li>
                                 <li>My Wishlist</li>
 
                             </ul>
@@ -40,9 +40,9 @@ export default function Footer() {
                         <h3>Categories</h3>
                         <div className="information-menu">
                             <ul>
-                                <li><Link to={"/menproduct"}>Men</Link></li>
-                                <li><Link to={"/womenproduct"}>Women</Link></li>
-                                <li><Link to={"/product"}>Accesories</Link></li>
+                                <li className='demo'><Link to={"/menproduct"}>Men</Link></li>
+                                <li className='demo'><Link to={"/womenproduct"}>Women</Link></li>
+                                <li className='demo'><Link to={"/product"}>Accesories</Link></li>
 
                             </ul>
                         </div>

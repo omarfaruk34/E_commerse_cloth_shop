@@ -22,7 +22,7 @@ export default function About() {
                         <h5>New Collection</h5>
                         <h3>Best Sweatshirts and <br />tracksuits for everyone!</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in, impedit voluptatem, autem similique aperiam cupiditate asperiores odio illo quae exercitationem? Quos excepturi vel ut quae distinctio hic, ipsa quidem?</p>
-                        <button><Link to={"/product"}>Shop Now<BsArrowRight/></Link></button>
+                        <button className='demo'><Link to={"/product"}>Shop Now<BsArrowRight/></Link></button>
                     </div>
                     <img src="https://k4j3j2s7.rocketcdn.me/clotya/wp-content/uploads/2022/05/image-02.jpg" alt="" />
                 </div>

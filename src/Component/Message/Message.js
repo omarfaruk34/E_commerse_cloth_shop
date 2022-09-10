@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import "./Message.css";
+import "./Message.css";
 
 
 
@@ -22,20 +22,17 @@ export default function Message() {
         </div>
         {
           message.map(item =>
-            <div className="messages bg-light p-2" key={item?._id}>
-              <div className="message-top">
+            <div className="messages" key={item?._id}>
                 {/* <img src="https://i.ibb.co/wzwNwg9/images.jpg" alt="" /> */}
                 <div className="message-content">
                   <h1>{item?.name}</h1>
                   <h2><span>Email: </span> {item?.email}</h2>
                 </div>
-              </div>
               <div className="message-bottom shadow">
                 <p> <span>Message:</span> {item?.message}</p>
                 {/* <input type="submit" className='btn btn-danger' value="Reply" /> */}
               </div>
-            </div>
-
+              </div>
           )
         }
       </div>

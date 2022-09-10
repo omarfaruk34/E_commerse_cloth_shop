@@ -103,4 +103,7 @@
     padding: 7px 10px;
   }
   
-  
+  .demo a{
+    color: #333;
+    text-decoration: none;
+  }

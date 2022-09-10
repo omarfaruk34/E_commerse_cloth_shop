@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HomeProduct.css'
+
 // import { Link } from "react-router-dom";
 
 
@@ -7,7 +8,7 @@ import './HomeProduct.css'
 export default function HomeProduct() {
 
 
-
+   
 
     const [products, setProducts] = React.useState([]);
     React.useEffect(() => {
@@ -27,6 +28,7 @@ export default function HomeProduct() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae enim natus eius animi vero, sapiente ab quo nobis sequi hic!</p>
                     </div>
                     <div className="home_products">
+                   
                             {
                                 products?.map(item =>
                                     <div key={item?._id} className="home-single-product">
@@ -39,6 +41,7 @@ export default function HomeProduct() {
                                     </div>
                                 )
                             }
+                            
                         
                     </div>
                 </div>
